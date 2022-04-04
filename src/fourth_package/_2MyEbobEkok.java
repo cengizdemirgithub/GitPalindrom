@@ -9,11 +9,11 @@ public class _2MyEbobEkok {
      * Bölen) ve LCM'yi (En Küçük Ortak Kat) bulmasını isteyin. Input : 30 40
      * Beklenen Cikti: 30 ve 40 icin EBOB = 10 30 ve 40 icin EKOK = 120
      */
-        int kücük = 18;
-        int büyük = 27;
+        int kücük = 19;
+        int büyük = 57;
         int ebob = 1;
-        int kücükEkok = 30;
-        int büyükEkok = 40;
+        int kücükEkok =kücük;
+        int büyükEkok = büyük;
 
 
         //iki sayiyi ayni anda bölenlerin carpimi ekok
@@ -39,6 +39,12 @@ public class _2MyEbobEkok {
                 ebob *= 7;
                 büyük /= 7;
                 kücük /= 7;
+
+            }
+            else if (büyük % kücük == 0 ) {
+                ebob *= kücük;
+                büyük /= kücük;
+                kücük /= kücük;
 
             }
 
