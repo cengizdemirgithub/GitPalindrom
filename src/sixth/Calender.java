@@ -3,23 +3,23 @@ package sixth;
 public class Calender {
     public static void main(String[] args) {
         /*
-        Bir aydaki gün sayısını hesaplayan bir Java programı yazınız.
+       Kullanıcıdan bir isim yazmasını isteyin, adın uzunluğu 3 olmalıdır. Ardından, adın aynı karakterlere sahip olup olmadığını kontrol edin.
 
-INPUT:
+Eger aynı karakterlere sahipse
 
-Ay Numarasi:
+"isim ayni karakterlere sahiptir." yazdirin.
 
-2
+Eger ayni kaakterlere sahip degilse
 
-Yil :
+"Dizenin benzersiz karakterleri var" yazdirin.
 
-2016
-
-OUTPUT :
-
-Subat 2016 29 Gundur.
+Ternary kullanin.
          */
-        int ayno=2;
+        String isim="abb";
+        String isim_=isim.substring(0,1).equals(isim.substring(1,2))?"isim ayni karakterlere sahiptir.":
+                (isim.substring(0,1).equals(isim.substring(2))?"isim ayni karakterlere sahiptir.":
+                        (isim.substring(1,2).equals(isim.substring(2)))?"isim ayni karakterlere sahiptir.":"Dizenin benzersiz karakterleri var");
+        System.out.println(isim_);
 
 
     }
