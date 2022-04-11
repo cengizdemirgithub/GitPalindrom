@@ -6,7 +6,7 @@ import java.util.List;
 public class ÜrünlerList {
     public int no;
     public double fiyat;
-    public static String ürün;
+    public String ürün;
     static List<ÜrünlerList> ürünListesi = new ArrayList<ÜrünlerList>();
     static ÜrünlerList domates = new ÜrünlerList(0, 2.10, "domates");
     static ÜrünlerList patates = new ÜrünlerList(1, 3.20, "patates");

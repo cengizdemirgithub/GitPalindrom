@@ -23,7 +23,7 @@ public class Panel {
 
                 case 0:
                     ürünListesi.add(domates);
-                    System.out.println(domates.ürün+" sectiniz ve bu ürünün fiyati "+domates.fiyat+" birim");
+                    System.out.println(domates+" sectiniz ve bu ürünün fiyati "+domates.fiyat+" birim");
                     System.out.println("kac kg istersiniz");
                     int domatesKilo = scanner.nextInt();
                     Sepet ekle = new Sepet(ürünListesi, "domates");
@@ -45,6 +45,7 @@ public class Panel {
                     } else if (devam == 0) {
                         System.out.println("alisverisiniz tamamlandi sepetinizdeki ürünler" + ürünlersepet + "\n toplam tutar: " + toptutar);
                         devammi=true;
+                        break;
 
 
 
@@ -60,7 +61,7 @@ public class Panel {
 
                 case 1:
                     ürünListesi.add(patates);
-                    System.out.println(patates.ürün+" sectiniz ve bu ürünün fiyati "+patates.fiyat+" birim");
+                    System.out.println(patates+" sectiniz ve bu ürünün fiyati "+patates.fiyat+" birim");
                     System.out.println("kac kg istersiniz");
                     int patatesKilo = scanner.nextInt();
                     ekle = new Sepet(ürünListesi, "patates");
@@ -80,7 +81,7 @@ public class Panel {
                     } else System.out.println("yanlis giris");
                     break;
                 case 2: ürünListesi.add(biber);
-                    System.out.println(biber.ürün+" sectiniz ve bu ürünün fiyati "+biber.fiyat+" birim");
+                    System.out.println(biber+" sectiniz ve bu ürünün fiyati "+biber.fiyat+" birim");
                     System.out.println("kac kg istersiniz");
                     int biberKilo = scanner.nextInt();
                     ekle = new Sepet(ürünListesi, "biber");
@@ -102,7 +103,7 @@ public class Panel {
                     break;
                 case 3:
                     ürünListesi.add(sogan);
-                    System.out.println(sogan.ürün+" sectiniz ve bu ürünün fiyati "+sogan.fiyat+" birim");
+                    System.out.println(sogan+" sectiniz ve bu ürünün fiyati "+sogan.fiyat+" birim");
                     System.out.println("kac kg istersiniz");
                     int soganKilo = scanner.nextInt();
                     ekle = new Sepet(ürünListesi, "sogan");
@@ -124,7 +125,7 @@ public class Panel {
                     break;
                 case 4:
                     ürünListesi.add(havuc);
-                    System.out.println(havuc.ürün+" sectiniz ve bu ürünün fiyati "+havuc.fiyat+" birim");
+                    System.out.println(havuc+" sectiniz ve bu ürünün fiyati "+havuc.fiyat+" birim");
                     System.out.println("kac kg istersiniz");
                     int havucKilo = scanner.nextInt();
                     ekle = new Sepet(ürünListesi, "havuc");
