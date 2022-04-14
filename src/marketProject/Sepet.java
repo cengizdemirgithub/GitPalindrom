@@ -9,7 +9,6 @@ public class Sepet extends Market {
 
 
     public Sepet(List<ÜrünlerList>ürünListesi, String ürün) {
-        //ürünlersepet.add(ürünler.get(ürünNo-1));
         ürünlersepet.add(ürün);
         System.out.println("sepetinizde "+ürünlersepet+" var");
 

@@ -40,6 +40,8 @@ public class Market {
 
 
        panel();
+
+
     }
 }
 
