@@ -26,12 +26,12 @@ public class IcindeVarmi {
 
 
         }
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 2; i < str.length(); i++) {
 
-            if (str.substring(i, i + 3).equals("xyz")) {
+            if (str.substring(i-2, i+1).equals("xyz")) {
                 kontrol = true;
                 break;
-            }else break;
+            }else ;
 
         }
         System.out.println("bu metin icinde \"xyz\" var midir? : " + kontrol);
