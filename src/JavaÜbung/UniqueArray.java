@@ -19,17 +19,20 @@ public class UniqueArray {
 
     }
 
-    private static void noSame(int[] arr) {
+    private static void noSame(int[] ar) {
         List<String> str=new ArrayList<>();
-        for (int i = 0; i <arr.length ; i++) {
-            str.add(i,String.valueOf(arr[i]));
+        List<String> strTekrarsiz=new ArrayList<>();
 
-            if(!str.contains(str.get(i))){
-
-
+        for (int i = 0; i <ar.length ; i++) {
+            str.add(String.valueOf(ar[i]));
+        }
+        for (int i = 0; i <str.size() ; i++) {
+            if (!strTekrarsiz.contains(str.get(i))){
+                strTekrarsiz.add(str.get(i));
             }
 
         }
-        System.out.println(str);
+        System.out.println(strTekrarsiz);
+
     }
 }
