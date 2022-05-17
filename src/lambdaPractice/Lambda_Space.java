@@ -1,9 +1,7 @@
 package lambdaPractice;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class Lambda_Space {
@@ -38,7 +36,24 @@ public class Lambda_Space {
         System.out.println();
         //S9: list pozitif elemanlari icn karelerini bulup birler basamagi 5 olmayanlardan yeni bir list olustur
         System.out.println("karenBirNo5(yeni) = " + karenBirNo5(yeni));
+        // S10 :list elemanlarini toplamini bulalim
+        sumMet(yeni);
+        System.out.println();
+        // S11 : negatiflerin karelerinden list olusturalim
+        negatifKare(yeni);
 
+    }
+
+    private static void negatifKare(List<Integer> yeni) {
+        List negalist=yeni.stream().filter(t -> t < 0).map(t -> t * t).collect(Collectors.toList());
+        System.out.println("negatif kare list: "+negalist);
+
+
+
+    }
+
+    private static void sumMet(List<Integer> yeni) {
+        System.out.println("toplam="+yeni.stream().reduce(0, (a, b) -> a + b));
     }
 
     private static List karenBirNo5(List<Integer> yeni) {
