@@ -41,7 +41,22 @@ public class Lambda_Space {
         System.out.println();
         // S11 : negatiflerin karelerinden list olusturalim
         negatifKare(yeni);
+        // S12 : listeden 5 den buyuk  sayi var mi?
+        System.out.println("bestenBüyükVarmi(yeni) = " + bestenBüyükVarmi(yeni));
+        // S13 : listenin tum elemanlari sifirdan kucuk mu?
+        System.out.println("elemanlar0danKücükMü(yeni) = " + elemanlar0danKücükMü(yeni));
+        // S15: listenin sifira esit elemani yok mu?
 
+    }
+
+    private static boolean elemanlar0danKücükMü(List<Integer> yeni) {
+        boolean kücükMü=yeni.stream().allMatch(t->t<0);
+        return kücükMü;
+    }
+
+    private static boolean bestenBüyükVarmi(List<Integer> yeni) {
+       boolean varmi= yeni.stream().anyMatch(t->t>5);
+       return varmi;
     }
 
     private static void negatifKare(List<Integer> yeni) {
