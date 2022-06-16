@@ -6,8 +6,9 @@ import java.util.stream.Collectors;
 
 public class Lambda_Space {
     public static void main(String[] args) {
-        List<Integer> yeni=new ArrayList<>();
+        List<Integer> yeni = new ArrayList<>();
         yeni.add(1);
+        yeni.add(0);
         yeni.add(13);
         yeni.add(2);
         yeni.add(3);
@@ -46,6 +47,24 @@ public class Lambda_Space {
         // S13 : listenin tum elemanlari sifirdan kucuk mu?
         System.out.println("elemanlar0danKücükMü(yeni) = " + elemanlar0danKücükMü(yeni));
         // S15: listenin sifira esit elemani yok mu?
+        System.out.println("sifiraEsitVarMi(yeni) = " + sifiraEsitVarMi(yeni));
+        // S16:  listenin ilk 5 elemanini topla?
+        //S17: listenin son bes elemaninin  listele
+        System.out.println("son5Eleman(yeni) = " + son5Eleman(yeni));
+
+    }
+
+    private static List son5Eleman(List<Integer> yeni) {
+        List yeni1=yeni.stream().limit(5).sorted().collect(Collectors.toList());
+
+
+        return yeni1;
+
+    }
+
+    private static boolean sifiraEsitVarMi(List<Integer> yeni) {
+        boolean sifiraEsitMi=!yeni.stream().anyMatch(t->t==0);
+        return sifiraEsitMi;
 
     }
 
